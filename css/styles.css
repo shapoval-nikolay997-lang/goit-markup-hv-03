@@ -1,0 +1,228 @@
+/* #region base styles */
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #2E2F42;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    
+    letter-spacing: 0.02em;
+}
+.socials .socials-linc:hover,
+.socials .socials-linc:focus
+{
+color: #404bbf;
+}
+
+/* #region reset */
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+/* #endregion */
+
+
+/* #region btn */
+
+
+/* #endregion */
+
+/* #region header */
+
+
+
+.nav-desc-link {
+    font-weight: 500;
+    line-height: 1.5;
+}
+.nav-desc-link:hover,
+.nav-desc-link:focus {
+    color: #404bbf;
+}
+.logo {
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2e2f42;
+}
+
+.logo-accent {
+   
+        color: #4d5ae5;
+}
+.logo-style {
+    color: #434455;
+}
+/* #endregion */
+
+/* #region section hero 1 */
+.hero {
+    background-color: #2E2F42;
+    color: #FFFFFF;
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #404bbf;
+}
+
+.btn {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+/* #endregion */
+
+/* #region section2 */
+
+
+.benefits-caption {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+}
+
+.benefits-desc {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* #endregion */
+
+/* #region section people 3 */
+
+.people {
+    background: #f4f4fd;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    line-height: 1.11;
+}
+
+.people-text {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.people-item {
+    background-color: #fff;
+}
+
+
+.people-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+
+.title-subtitle-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+}
+
+/* #endregion */
+
+/* #region work */
+
+
+.work-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.work-title-list {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+}
+
+
+
+.work-prof {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #434455;
+}
+
+/* #endregion */
+
+/* #region footer */
+.footer {
+    background-color:  #2e2f42;
+   
+}
+
+
+.logo-footer {
+    color: #f4f4fd;
+}
+
+.logo-accent {
+    color: #4d5ae5;
+}
+
+
+
+
+
+
+.footer-caption {
+    color: #f4f4fd;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* #endregion */
+
+/* #region socials */
+.socials {}
+
+.socials-linc {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #434455;
+}
+
+/* #endregion */
