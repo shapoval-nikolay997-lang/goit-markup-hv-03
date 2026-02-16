@@ -1,8 +1,20 @@
 /* #region base styles */
 
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
 ul,
 ol {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -19,6 +31,35 @@ body {
 color: #404bbf;
 }
 
+
+
+.socials {
+    display: flex;
+    margin-left: auto;
+    
+}
+.socials-title {
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
+    
+}
+
+.socials-linc {
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #434455;
+}
+
+/* #region conteiner */
+ 
+  
+.benefits {
+    padding: 0;
+}
+/*#endregion */
 /* #region reset */
 a {
     text-decoration: none;
@@ -26,6 +67,9 @@ a {
 }
 
 button {
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: none;
     cursor: pointer;
 }
 
@@ -42,18 +86,53 @@ address {
 /* #endregion */
 
 /* #region header */
+.header > .container {
+    display: flex;
+    align-items: center;
+    max-width: 1158px; 
+    margin: 0 auto;    
+    padding: 0 15px;
+}
+
+.nav-desc {
+    display: flex;
+    gap: 40px;
+    
+    
+
+}
+
 
 
 
 .nav-desc-link {
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-decoration: none;
+    
+    
+   }
+    
+
+.nav-desc-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
 }
+
+
 .nav-desc-link:hover,
 .nav-desc-link:focus {
     color: #404bbf;
 }
 .logo {
+    display: inline-block;
+    margin-right: 76px;
+    text-decoration: none;
     font-family: "Raleway",sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -61,6 +140,7 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2e2f42;
+    
 }
 
 .logo-accent {
@@ -73,17 +153,34 @@ address {
 /* #endregion */
 
 /* #region section hero 1 */
+
+.container {
+    max-width: 1158px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
 .hero {
+   
     background-color: #2E2F42;
     color: #FFFFFF;
+    padding: 188px 472px;
+    
 }
 
 .hero-title {
+    text-align: center;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07143;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #fff;
+    margin-bottom: 48px;
+}
+
+.section {
+   padding: 120px 0;
+
 }
 
 .btn:hover,
@@ -92,19 +189,46 @@ address {
 }
 
 .btn {
+    border-radius: 4px;
+    padding: 16px 32px;
     background-color: #4D5AE5;
     color: #FFFFFF;
     font-weight: 500;
     line-height: 1.5;
+    display: block;
+    border: none;
+    margin: 0 auto;
     letter-spacing: 0.04em;
+    
 }
 
 /* #endregion */
 
 /* #region section2 */
-
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.benefits-list {
+    padding-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+ .benefits-item {
+    width: 264px;
+ }
 .benefits-caption {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.02em;
@@ -113,6 +237,7 @@ address {
 
 .benefits-desc {
     font-weight: 400;
+    width: 264;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -123,10 +248,12 @@ address {
 /* #region section people 3 */
 
 .people {
+    
     background: #f4f4fd;
     font-size: 36px;
     letter-spacing: 0.02em;
     line-height: 1.11;
+
 }
 
 .people-text {
@@ -134,12 +261,24 @@ address {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 72px;
 }
 .people-item {
     background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    padding: 0 0 32px;
 }
 
+.people-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
 
+.people-ill {
+    width: 264px;
+    height: 260px;
+}
 .people-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -147,6 +286,7 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin: 32px 0 8px;
 }
 
 .title-subtitle-text {
@@ -154,6 +294,7 @@ address {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 32px;
     text-align: center;
     color: #434455;
 }
@@ -161,13 +302,29 @@ address {
 /* #endregion */
 
 /* #region work */
+.container {
+   max-width: 1158px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
 
+
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 .work-title {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .work-title-list {
@@ -175,27 +332,65 @@ address {
     font-size: 20px;
     letter-spacing: 0.02em;
     line-height: 1.2;
+    margin-bottom: 8px;
+}
+.work-icon {
+    width: calc((100% - 48px) / 3);
+    
 }
 
+.work-img {
+   display: block;
+    max-width: 100%; 
+    height: auto;
+}
 
 
 .work-prof {
     font-weight: 400;
     line-height: 1.5;
     color: #434455;
+    margin: 0;
+    letter-spacing: 0,02en;
+}
+
+.work-wrapper {
+    padding: 32px 16px;
+    border: 1px solid #e7e9e7;
+    border-top: none;
 }
 
 /* #endregion */
 
 /* #region footer */
-.footer {
-    background-color:  #2e2f42;
-   
+
+.footer > .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
+.footer {
+    background-color:  #2e2f42;
+     padding: 100px 0;
+}
+
+.footer-info {
+    max-width: 264px;
+}
 
 .logo-footer {
+    
+    display: inline-block;
+    margin-bottom: 16px;
     color: #f4f4fd;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .logo-accent {
@@ -204,20 +399,20 @@ address {
 
 
 
-
-
-
 .footer-caption {
-    color: #f4f4fd;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    margin: 0;
 }
+
+
 
 /* #endregion */
 
 /* #region socials */
-.socials {}
+
 
 .socials-linc {
     font-weight: 400;
