@@ -205,6 +205,10 @@ address {
 /* #endregion */
 
 /* #region section2 */
+.benefits {
+    padding: 120px 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -218,14 +222,14 @@ address {
   overflow: hidden;
 }
 .benefits-list {
-    padding-top: 120px;
-    margin-bottom: 120px;
     display: flex;
-    justify-content: center;
     gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
  .benefits-item {
-    width: 264px;
+    width: calc((100% - 72px) / 4);
  }
 .benefits-caption {
     margin-bottom: 8px;
@@ -236,16 +240,23 @@ address {
 }
 
 .benefits-desc {
-    font-weight: 400;
-    width: 264;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin: 0;
 }
 
 /* #endregion */
 
 /* #region section people 3 */
+
+.container {
+     max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 .people {
     
@@ -266,18 +277,25 @@ address {
 .people-item {
     background-color: #fff;
     border-radius: 0 0 4px 4px;
-    padding: 0 0 32px;
+    width: calc((100% - 72px) / 4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .people-list {
     display: flex;
     justify-content: center;
     gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .people-ill {
-    width: 264px;
-    height: 260px;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .people-subtitle {
     font-weight: 500;
@@ -290,6 +308,7 @@ address {
 }
 
 .title-subtitle-text {
+    font-size: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
