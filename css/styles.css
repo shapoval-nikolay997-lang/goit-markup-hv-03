@@ -46,6 +46,7 @@ color: #404bbf;
 }
 
 .socials-linc {
+    display: block;
     line-height: 1.5;
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -274,7 +275,7 @@ address {
 
 }
 .team-content-wrapper {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .people-text {
@@ -315,7 +316,7 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin: 32px 0 8px;
+    margin: 8px;
 }
 
 .title-subtitle-text {
@@ -358,7 +359,7 @@ address {
 }
 
 .work-title-list {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.02em;
     line-height: 1.2;
@@ -381,7 +382,7 @@ address {
     line-height: 1.5;
     color: #434455;
     margin: 0;
-    letter-spacing: 0,02em;
+    letter-spacing: 0.02em;
 }
 
 .work-wrapper {
