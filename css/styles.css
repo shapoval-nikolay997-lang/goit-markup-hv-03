@@ -190,6 +190,10 @@ address {
    padding: 120px 0;
 
 }
+.section.hero {
+    background-color: #2e2f42;
+    padding: 188px 0;
+}
 
 .btn:hover,
 .btn:focus {
